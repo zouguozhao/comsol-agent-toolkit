@@ -1,0 +1,4 @@
+interface:
+  display_name: "COMSOL Agent 工具包"
+  short_description: "复用 COMSOL 接入、模型检查、Java 批处理与共享会话方法"
+  default_prompt: "使用 $comsol-agent-toolkit 检查当前 COMSOL 环境，并选择已有验证证据支持的接入和建模方式。"

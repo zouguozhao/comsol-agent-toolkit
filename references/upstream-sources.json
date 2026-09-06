@@ -1,0 +1,225 @@
+{
+  "checked_on": "2026-09-06",
+  "method": "GitHub REST API 查询默认分支提交，再读取 raw.githubusercontent.com 固定提交文件。仅依据实际取得的文件判断，不运行上游安装脚本。",
+  "queries": [
+    {
+      "query": "comsol mcp",
+      "sort": "updated",
+      "per_page": 8
+    },
+    {
+      "query": "comsol agent",
+      "sort": "updated",
+      "per_page": 8
+    },
+    {
+      "query": "comsol matlab livelink",
+      "sort": "updated",
+      "per_page": 8
+    }
+  ],
+  "scope_note": "定向检索与已有候选复核，不声称穷尽 GitHub。未取得的路径如实记录，不把 README 能力说明等同于实际实现。",
+  "repositories": [
+    {
+      "repository": "svd-ai-lab/sim-cli",
+      "url": "https://github.com/svd-ai-lab/sim-cli",
+      "branch": "main",
+      "commit": "b69c7be7119789f6de3538eac1db8d2cf7a30ef5",
+      "commit_date": "2026-08-28T02:13:08Z",
+      "license_api": "Apache-2.0",
+      "reviewed_files": [
+        {
+          "url": "https://raw.githubusercontent.com/svd-ai-lab/sim-cli/b69c7be7119789f6de3538eac1db8d2cf7a30ef5/README.md",
+          "status": "read"
+        }
+      ]
+    },
+    {
+      "repository": "svd-ai-lab/sim-plugin-comsol",
+      "url": "https://github.com/svd-ai-lab/sim-plugin-comsol",
+      "branch": "main",
+      "commit": "770999a377b08706e80be7a269c80a2f4f32aab8",
+      "commit_date": "2026-08-18T16:02:10Z",
+      "license_api": "Apache-2.0",
+      "reviewed_files": [
+        {
+          "url": "https://raw.githubusercontent.com/svd-ai-lab/sim-plugin-comsol/770999a377b08706e80be7a269c80a2f4f32aab8/README.md",
+          "status": "read"
+        },
+        {
+          "url": "https://raw.githubusercontent.com/svd-ai-lab/sim-plugin-comsol/770999a377b08706e80be7a269c80a2f4f32aab8/pyproject.toml",
+          "status": "read"
+        }
+      ]
+    },
+    {
+      "repository": "MPh-py/MPh",
+      "url": "https://github.com/MPh-py/MPh",
+      "branch": "main",
+      "commit": "30e0cff361d680249bae5c29f7873a29f1639c5d",
+      "commit_date": "2026-08-30T12:29:36Z",
+      "license_api": "MIT",
+      "reviewed_files": [
+        {
+          "url": "https://raw.githubusercontent.com/MPh-py/MPh/30e0cff361d680249bae5c29f7873a29f1639c5d/pyproject.toml",
+          "status": "read",
+          "note": "version=1.4.0，requires-python>=3.10"
+        },
+        {
+          "url": "https://raw.githubusercontent.com/MPh-py/MPh/30e0cff361d680249bae5c29f7873a29f1639c5d/README.md",
+          "status": "unavailable",
+          "note": "Response status code does not indicate success: 404 (Not Found)."
+        },
+        {
+          "url": "https://raw.githubusercontent.com/MPh-py/MPh/30e0cff361d680249bae5c29f7873a29f1639c5d/mph/client.py",
+          "status": "read"
+        },
+        {
+          "url": "https://raw.githubusercontent.com/MPh-py/MPh/30e0cff361d680249bae5c29f7873a29f1639c5d/mph/model.py",
+          "status": "read"
+        }
+      ]
+    },
+    {
+      "repository": "XiaoSe532/comsol-codex-mcp",
+      "url": "https://github.com/XiaoSe532/comsol-codex-mcp",
+      "branch": "main",
+      "commit": "ecf220a09b459ca0b7f6fd1d95dbed63ffee4f26",
+      "commit_date": "2026-06-25T01:33:15Z",
+      "license_api": "MIT",
+      "reviewed_files": [
+        {
+          "url": "https://raw.githubusercontent.com/XiaoSe532/comsol-codex-mcp/ecf220a09b459ca0b7f6fd1d95dbed63ffee4f26/README.md",
+          "status": "read"
+        },
+        {
+          "url": "https://raw.githubusercontent.com/XiaoSe532/comsol-codex-mcp/ecf220a09b459ca0b7f6fd1d95dbed63ffee4f26/src/comsol_mcp_server/tools.py",
+          "status": "read"
+        }
+      ]
+    },
+    {
+      "repository": "WendyAi2005/codex-comsol-bridge",
+      "url": "https://github.com/WendyAi2005/codex-comsol-bridge",
+      "branch": "main",
+      "commit": "294dbd341705e012c025b1774c00b80106c6ebcb",
+      "commit_date": "2026-07-17T12:27:09Z",
+      "license_api": "MIT",
+      "reviewed_files": [
+        {
+          "url": "https://raw.githubusercontent.com/WendyAi2005/codex-comsol-bridge/294dbd341705e012c025b1774c00b80106c6ebcb/README.md",
+          "status": "read"
+        }
+      ]
+    },
+    {
+      "repository": "Howard-Lai/COMSOL_MCP",
+      "url": "https://github.com/Howard-Lai/COMSOL_MCP",
+      "branch": "main",
+      "commit": "fcf01a874e97866d808a86c537c140456e4cd9d5",
+      "commit_date": "2026-09-01T09:21:05Z",
+      "license_api": "MIT",
+      "reviewed_files": [
+        {
+          "url": "https://raw.githubusercontent.com/Howard-Lai/COMSOL_MCP/fcf01a874e97866d808a86c537c140456e4cd9d5/README.md",
+          "status": "read"
+        },
+        {
+          "url": "https://raw.githubusercontent.com/Howard-Lai/COMSOL_MCP/fcf01a874e97866d808a86c537c140456e4cd9d5/BUGFIXES_2026-08-06.md",
+          "status": "read"
+        }
+      ]
+    },
+    {
+      "repository": "Twofruitsgrape/comsol-mcp",
+      "url": "https://github.com/Twofruitsgrape/comsol-mcp",
+      "branch": "main",
+      "commit": "66b74f7f68789005750d602561095647fb6808b2",
+      "commit_date": "2026-09-01T08:33:56Z",
+      "license_api": "MIT",
+      "reviewed_files": [
+        {
+          "url": "https://raw.githubusercontent.com/Twofruitsgrape/comsol-mcp/66b74f7f68789005750d602561095647fb6808b2/README.md",
+          "status": "read"
+        }
+      ]
+    },
+    {
+      "repository": "wjc9011/COMSOL_Multiphysics_MCP",
+      "url": "https://github.com/wjc9011/COMSOL_Multiphysics_MCP",
+      "branch": "main",
+      "commit": "99172f8f43c6753c2442c406cd5c6055ea8c5bef",
+      "commit_date": "2026-08-12T13:58:59Z",
+      "license_api": "MIT",
+      "reviewed_files": [
+        {
+          "url": "https://raw.githubusercontent.com/wjc9011/COMSOL_Multiphysics_MCP/99172f8f43c6753c2442c406cd5c6055ea8c5bef/README.md",
+          "status": "read"
+        }
+      ]
+    },
+    {
+      "repository": "fatdog-pro/Comsol-automatic-wwj",
+      "url": "https://github.com/fatdog-pro/Comsol-automatic-wwj",
+      "branch": "main",
+      "commit": "f588c86f56ef105d6eb335eac560752847ebf7a8",
+      "commit_date": "2026-09-05T09:13:52Z",
+      "license_api": null,
+      "reviewed_files": [
+        {
+          "url": "https://raw.githubusercontent.com/fatdog-pro/Comsol-automatic-wwj/f588c86f56ef105d6eb335eac560752847ebf7a8/README.md",
+          "status": "read"
+        },
+        {
+          "url": "https://raw.githubusercontent.com/fatdog-pro/Comsol-automatic-wwj/f588c86f56ef105d6eb335eac560752847ebf7a8/LICENSE",
+          "status": "unavailable",
+          "note": "HTTP 404"
+        },
+        {
+          "url": "https://raw.githubusercontent.com/fatdog-pro/Comsol-automatic-wwj/f588c86f56ef105d6eb335eac560752847ebf7a8/NOTICE.md",
+          "status": "unavailable",
+          "note": "HTTP 404"
+        }
+      ],
+      "review_note": "固定提交树仅有 README.md；文中所述 server/scripts/LICENSE 等不在此提交，未作为可安装实现采用。"
+    },
+    {
+      "repository": "joker-anyway/matlab-comsol-automation",
+      "url": "https://github.com/joker-anyway/matlab-comsol-automation",
+      "branch": "main",
+      "commit": "762568af0a1c17c214b43ae58e106ece83f2e67e",
+      "commit_date": "2026-09-02T05:04:19Z",
+      "license_api": "MIT",
+      "reviewed_files": [
+        {
+          "url": "https://raw.githubusercontent.com/joker-anyway/matlab-comsol-automation/762568af0a1c17c214b43ae58e106ece83f2e67e/README.md",
+          "status": "read"
+        },
+        {
+          "url": "https://raw.githubusercontent.com/joker-anyway/matlab-comsol-automation/762568af0a1c17c214b43ae58e106ece83f2e67e/SKILL.md",
+          "status": "read"
+        }
+      ]
+    },
+    {
+      "repository": "matlab/matlab-mcp-server",
+      "url": "https://github.com/matlab/matlab-mcp-server",
+      "former_url": "https://github.com/matlab/matlab-mcp-core-server",
+      "branch": "main",
+      "commit": "2e44b0ac789f43083cc29f5dce9079244b081a4c",
+      "commit_date": "2026-09-01T17:08:36Z",
+      "license_api": "NOASSERTION",
+      "license_review": "自定义 MathWorks 许可，第三项限制与 MathWorks 产品及服务共同使用",
+      "reviewed_files": [
+        {
+          "url": "https://raw.githubusercontent.com/matlab/matlab-mcp-core-server/2e44b0ac789f43083cc29f5dce9079244b081a4c/README.md",
+          "status": "read"
+        },
+        {
+          "url": "https://raw.githubusercontent.com/matlab/matlab-mcp-core-server/2e44b0ac789f43083cc29f5dce9079244b081a4c/LICENSE.md",
+          "status": "read"
+        }
+      ]
+    }
+  ]
+}

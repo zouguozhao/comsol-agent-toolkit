@@ -1,0 +1,17 @@
+__pycache__/
+*.py[cod]
+*.class
+*.mph
+*.mphbin
+*.log
+*.status
+*.agent.lock
+.venv/
+.env
+.env.*
+dist/
+build/
+runs/
+validation/
+.mcp-token
+SHA256SUMS.json

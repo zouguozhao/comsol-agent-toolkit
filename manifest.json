@@ -1,0 +1,22 @@
+{
+  "name": "comsol-agent-toolkit",
+  "version": "0.2.0",
+  "files": [
+    "SKILL.md",
+    "README.md",
+    "agents/openai.yaml",
+    "scripts/comsol_bridge.py",
+    "scripts/comsol_mcp.py",
+    "scripts/package_skill.py",
+    "assets/BlockSmoke.java",
+    "assets/comsol_agent_livelink.m",
+    "references/control-guide.md",
+    "references/upstreams.md",
+    "references/upstream-sources.json",
+    "references/validation.md",
+    "references/publishing.md",
+    "tests/test_toolkit.py",
+    ".gitignore",
+    "manifest.json"
+  ]
+}

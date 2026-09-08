@@ -12,6 +12,10 @@ Python/MCP 与 Java/MATLAB 示例负责执行，GitHub 保存版本和分发历�
 本项目是社区接入组合，不是 COMSOL、MathWorks 或 OpenAI 官方产品。
 COMSOL 和 MATLAB 的程序、许可、模型与专有文档不随工具包分发。
 
+## 可复用建模知识
+
+- [激光焊接复合高斯热源](references/laser-composite-gaussian.md)：守恒公式、可复制的COMSOL表达式、半模型功率检查与参数标定要点。
+
 ## 能力与选型
 
 | 层次 | 实现与用途 | 验证边界 |

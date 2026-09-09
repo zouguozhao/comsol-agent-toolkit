@@ -11,6 +11,7 @@
     "assets/BlockSmoke.java",
     "assets/comsol_agent_livelink.m",
     "references/control-guide.md",
+    "references/laser-composite-gaussian.md",
     "references/upstreams.md",
     "references/upstream-sources.json",
     "references/validation.md",

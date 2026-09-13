@@ -14,7 +14,11 @@ COMSOL 和 MATLAB 的程序、许可、模型与专有文档不随工具包分�
 
 ## 可复用建模知识
 
+- [激光与超声焊接知识索引](references/welding/index.md)：按熔池热流、热源校准、残余应力和超声机制选择方案；包含吕成（2024）与 Liu 等（2022）的证据和复用限制。
 - [激光焊接复合高斯热源](references/laser-composite-gaussian.md)：守恒公式、可复制的COMSOL表达式、半模型功率检查与参数标定要点。
+
+Codex 在本仓库工作时可从 [AGENTS.md](AGENTS.md) 进入；使用 Skill 时由
+[SKILL.md](SKILL.md) 按需加载知识。领域方法保存在 `references/welding/`，与执行接口分开维护。
 
 ## 能力与选型
 

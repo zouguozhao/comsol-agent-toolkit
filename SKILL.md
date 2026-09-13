@@ -1,6 +1,6 @@
 ---
 name: comsol-agent-toolkit
-description: "通过可复用 Python/MCP、COMSOL Java batch 和可选 MPh/LiveLink 接入 COMSOL，检查 MPH、绑定模型、修改参数、执行建模配方和查询任务；适用于 COMSOL 自动化与接入任务。"
+description: "通过 Python/MCP、COMSOL Java batch 和可选 MPh/LiveLink 检查与操作 COMSOL 模型；也可按已核查文献制定激光及超声焊接方案，选择热源、热流或残余应力路线。"
 ---
 
 # COMSOL Agent 工具包
@@ -18,6 +18,11 @@ description: "通过可复用 Python/MCP、COMSOL Java batch 和可选 MPh/LiveL
 | 查看现有 Server 模型、改参数、存检查点 | MCP 中的 connect、bind、describe、set、save；需要 Python MPh |
 | 用户要求实时看到同一模型树 | 优先现有 `sim-cli`＋`sim-plugin-comsol` 的 shared-desktop；见接入指南 |
 | 用户已有 MATLAB/LiveLink 工作流 | 使用 LiveLink 模板及官方 MATLAB MCP；见接入指南 |
+| 制定激光/超声焊接方案或复用文献 | 先读 [焊接知识索引](references/welding/index.md)，再按目标选读；采用方程时查 [公式核查](references/welding/formula-audit.md) |
+
+制定焊接方案时，区分原文工况、核查结果与工程建议。用用户材料、几何和分析目标
+选择最小模型，明确校准/独立验证数据，并引用文献页码。论文参数不替代案例参数。
+只做文献方案分析时无需启动 COMSOL，也无需读取与当前路线无关的全部文献。
 
 操作命令、接口边界和共享 Desktop 接法见 [references/control-guide.md](references/control-guide.md)。
 需要了解选型、更新依赖或用户要求“最新项目”时，读取

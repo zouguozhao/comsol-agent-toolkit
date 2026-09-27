@@ -16,11 +16,27 @@ COMSOL 和 MATLAB 的程序、许可、模型与专有文档不随工具包分�
 
 - [激光与超声焊接知识索引](references/welding/index.md)：按熔池热流、热源校准、残余应力和超声机制选择方案；包含吕成（2024）与 Liu 等（2022）的证据和复用限制。
 - [激光焊接复合高斯热源](references/laser-composite-gaussian.md)：守恒公式、可复制的COMSOL表达式、半模型功率检查与参数标定要点。
+- [已求解 MPH 的 GUI 检查与流向箭头出图](references/solved-model-gui-review.md)：本机实测的 Desktop 检查、解核对、Java 后处理、结果验收及共享实时连接边界。
 
 Codex 在本仓库工作时可从 [AGENTS.md](AGENTS.md) 进入；使用 Skill 时由
 [SKILL.md](SKILL.md) 按需加载知识。领域方法保存在 `references/welding/`，与执行接口分开维护。
 
 ## 能力与选型
+
+### 可见 Desktop 的使用要求
+
+用户要求实时看见模型树、几何、网格和求解过程时，采用共享 COMSOL Server 与
+Desktop 的工作流。Agent 与 Desktop 必须连接同一个 Server，并操作同一个模型 Tag；
+几何构建、网格生成和研究求解均在该共享模型上执行。
+
+验收必须包括 Desktop 中的模型树更新、几何显示、网格显示，以及求解期间的进度或
+求解日志显示。单纯连接成功、弹出窗口、查看最终 MPH 或查询后台日志均不足以完成
+这一要求。具体步骤和验收记录见 [操控指南](references/control-guide.md#实时可见工作流与验收)。
+
+当前版本提供接入说明，尚未内置完整的 Desktop 启动、共享模型执行及界面刷新工具，
+真实 GUI 同步也尚未验证。现有 `comsol_run_batch` 仍是独立后台计算接口。
+Agent 遇到可见运行要求时，先检查共享 Desktop 接入条件；条件不足时说明缺口，
+不得静默改用 batch 并宣称已满足实时可见要求。
 
 | 层次 | 实现与用途 | 验证边界 |
 | --- | --- | --- |

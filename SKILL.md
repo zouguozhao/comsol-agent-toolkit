@@ -17,6 +17,7 @@ description: "通过 Python/MCP、COMSOL Java batch 和可选 MPh/LiveLink 检�
 | 执行已确定的任意物理场 Java 配方 | `compile` → `batch` → `job-status`；需要 COMSOL 和对应模块许可 |
 | 查看现有 Server 模型、改参数、存检查点 | MCP 中的 connect、bind、describe、set、save；需要 Python MPh |
 | 用户要求实时看到同一模型树 | 优先现有 `sim-cli`＋`sim-plugin-comsol` 的 shared-desktop；见接入指南 |
+| 检查已有 MPH 并导出带流向箭头的流场图 | [已求解模型 GUI 检查与出图](references/solved-model-gui-review.md)；核对真实解后用 COMSOL Java 后处理 |
 | 用户已有 MATLAB/LiveLink 工作流 | 使用 LiveLink 模板及官方 MATLAB MCP；见接入指南 |
 | 制定激光/超声焊接方案或复用文献 | 先读 [焊接知识索引](references/welding/index.md)，再按目标选读；采用方程时查 [公式核查](references/welding/formula-audit.md) |
 
@@ -32,6 +33,22 @@ description: "通过 Python/MCP、COMSOL Java batch 和可选 MPh/LiveLink 检�
 向用户报告兼容性前，读取 [references/validation.md](references/validation.md)。
 
 ## 实际执行
+
+### 用户要求看见 COMSOL 运行时
+
+“看见模型树、几何、网格和求解过程”是完整的可见运行要求。使用共享 Server 与
+Desktop：核对相同 host、port、模型 Tag，复用同一模型句柄，逐步构建几何、生成网格、
+执行研究，并在 Desktop 验证各阶段显示。详细验收见
+[接入指南](references/control-guide.md#实时可见工作流与验收)。
+
+普通 Desktop 打开磁盘 MPH、后台 batch、隐藏进程和日志轮询不能单独满足该要求。
+本包当前未内置完整可见工作流，也未完成真实 Desktop 同步验证；先检查已有共享
+Desktop 或外部 sim-cli 插件是否可用。依赖或绑定不成立时明确报告缺口，保持该要求
+未完成，不静默降级为 batch。连接成功或截图不能替代四项可见性验收。
+
+若用户要求检查**已有** MPH 并出图，按[已求解模型检查与流向箭头出图流程](references/solved-model-gui-review.md)
+区分 Desktop 可见检查、Java 独立后处理和共享实时运行。出图前核对实际物理接口、
+研究类型、保存时刻、速度参考系与相变阈值；案例脚本和图不随本包分发。
 
 1. 确定用户要检查、修改、建模、求解还是发布工具；保持该范围。使用模式下如有
    `0-caseDict/caseDict`，以它作为物理与数值参数来源。工具自检例子不是工程工况。
